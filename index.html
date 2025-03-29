@@ -20,13 +20,32 @@
             <a href="./Frontend/signup.html" class="primary-button">Sign Up</a>
         </nav>
     </header>
-    
+        
     <section class="hero">
         <h1>Welcome to ExamPro</h1>
         <p>Take online exams with ease, track your progress, and ace your exams!</p>
         <div class="hero-buttons">
-            <a href="signup.html" class="cta-button">Start Your Exam</a>
+            <a href="./Frontend/signup.html" class="cta-button">Start Your Exam</a>
             <a href="demo.html" class="secondary-button">Watch Demo</a>
+        </div>
+
+        <!-- Team Members Section -->
+        <div class="hero-team">
+            <h2>Meet Our Team</h2>
+            <div class="hero-team-container">
+                <div class="hero-team-member">
+                    <h3>D Vishnu Vardhn</h3>
+                    <p>23BDS1045</p>
+                </div>
+                <div class="hero-team-member">
+                    <h3>Lohithaswin V</h3>
+                    <p>23BDS1171</p>
+                </div>
+                <div class="hero-team-member">
+                    <h3>Akshay Prakash T B</h3>
+                    <p>23BDS1174</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -45,33 +64,6 @@
         </div>
     </section>
 
-    <section class="how-it-works">
-        <h1>How It Works</h1>
-        <div class="steps">
-            <div class="step">
-                <h2>1. Choose Your Exam</h2>
-                <p>Select from a list of available exams or create a new one.</p>
-            </div>
-            <div class="step">
-                <h2>2. Take the Exam</h2>
-                <p>Complete your exam at your own pace, within a set time limit.</p>
-            </div>
-            <div class="step">
-                <h2>3. Get Results</h2>
-                <p>Receive instant feedback and results upon completion.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter for the latest exam updates and study tips.</p>
-        <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email address">
-            <button type="submit" class="primary-button">Subscribe</button>
-        </form>
-    </section>
-
     <footer>
         <div class="footer-links">
             <a href="about.html">About Us</a>
@@ -82,25 +74,6 @@
         </div>
         <p>&copy; 2024 ExamPro. All rights reserved.</p>
     </footer>
-
-    <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
-
-    <div id="chatbot-container" class="hidden">
-        <div id="chat-header">
-            <h3>ExamPro Assistant</h3>
-            <button onclick="toggleChatbot()" class="close-btn">✕</button>
-        </div>
-        <div id="chat-window"></div>
-        <div id="chat-input-area">
-            <input 
-                type="text" 
-                id="user-input" 
-                placeholder="Type your message..." 
-                onkeydown="handleKeyPress(event)"
-            >
-            <button onclick="sendMessage()" id="send-button">Send</button>
-        </div>
-    </div>
 
     <script src="chatbot.js"></script>
 </body>
