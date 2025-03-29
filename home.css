@@ -383,3 +383,42 @@ footer a:hover {
 #send-button:hover {
     background-color: #0056b3;
 }
+ /*------------*/
+ /* Hero Section Team */
+.hero-team {
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-team h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-team-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-team-member {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero-team-member h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.hero-team-member p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ddd;
+}
