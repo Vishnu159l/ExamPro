@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ExamPro</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ExamPro</div>
+        <nav>
+            <div class="search-bar">
+                <input type="search" placeholder="Search exams...">
+            </div>
+            <a href="exams.html">Browse Exams</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Log In</a>
+            <a href="signup.html" class="primary-button">Sign Up</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to ExamPro</h1>
+        <p>Take online exams with ease, track your progress, and ace your exams!</p>
+        <div class="hero-buttons">
+            <a href="signup.html" class="cta-button">Start Your Exam</a>
+            <a href="demo.html" class="secondary-button">Watch Demo</a>
+        </div>
+    </section>
+
+    <section class="top-features">
+        <div class="feature-card">
+            <h2>Instant Results</h2>
+            <p>Get real-time results after completing your online exam.</p>
+        </div>
+        <div class="feature-card">
+            <h2>Secure & Safe</h2>
+            <p>Your data is fully encrypted, ensuring a safe exam experience.</p>
+        </div>
+        <div class="feature-card">
+            <h2>Customizable Exams</h2>
+            <p>Choose from a variety of exam topics or create your own.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h1>How It Works</h1>
+        <div class="steps">
+            <div class="step">
+                <h2>1. Choose Your Exam</h2>
+                <p>Select from a list of available exams or create a new one.</p>
+            </div>
+            <div class="step">
+                <h2>2. Take the Exam</h2>
+                <p>Complete your exam at your own pace, within a set time limit.</p>
+            </div>
+            <div class="step">
+                <h2>3. Get Results</h2>
+                <p>Receive instant feedback and results upon completion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest exam updates and study tips.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit" class="primary-button">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="faq.html">FAQ</a>
+            <a href="support.html">Support</a>
+        </div>
+        <p>&copy; 2024 ExamPro. All rights reserved.</p>
+    </footer>
+
+    <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
+
+    <div id="chatbot-container" class="hidden">
+        <div id="chat-header">
+            <h3>ExamPro Assistant</h3>
+            <button onclick="toggleChatbot()" class="close-btn">✕</button>
+        </div>
+        <div id="chat-window"></div>
+        <div id="chat-input-area">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Type your message..." 
+                onkeydown="handleKeyPress(event)"
+            >
+            <button onclick="sendMessage()" id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

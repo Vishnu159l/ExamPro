@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Exams - ExamPro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="myExamsPage">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>ExamPro</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="createexam.html" class="nav-link">Create Exam</a>
+                    <a href="myexams.html" class="nav-link active">My Exams</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="nav-btn notification-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                        </svg>
+                    </button>
+                    <a href="home.html"><button class="nav-btn logout-btn">Logout</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div>
+                    <h2>My Exams</h2>
+                    <p>View and manage your exam history</p>
+                </div>
+                <button class="create-exam-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 4v16m8-8H4"/>
+                    </svg>
+                    Create New Exam
+                </button>
+            </header>
+
+            <section class="exams-list-section">
+                <div class="exam-filters">
+                    <select class="form-input filter-select">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Scheduled</option>
+                        <option>Completed</option>
+                    </select>
+                    <input type="text" placeholder="Search exams" class="form-input search-input">
+                </div>
+
+                <div class="exam-list">
+                    <div class="exam-card">
+                        <div class="exam-header">
+                            <h3>Final Exam - Computer Science 101</h3>
+                            <span class="exam-status active">Active</span>
+                        </div>
+                        <div class="exam-details">
+                            <p>Scheduled: Feb 10, 2025</p>
+                            <p>Total Questions: 50</p>
+                            <p>Duration: 120 minutes</p>
+                        </div>
+                        <div class="exam-actions">
+                            <button class="btn btn-view">View Details</button>
+                            <button class="btn btn-edit">Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="exam-card">
+                        <div class="exam-header">
+                            <h3>Midterm - Data Structures</h3>
+                            <span class="exam-status completed">Completed</span>
+                        </div>
+                        <div class="exam-details">
+                            <p>Completed: Jan 25, 2025</p>
+                            <p>Total Questions: 40</p>
+                            <p>Average Score: 76%</p>
+                        </div>
+                        <div class="exam-actions">
+                            <button class="btn btn-view">View Results</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>

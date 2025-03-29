@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+.sidebar {
+    background-color: rgb(47, 118, 233);
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    padding-top: 24px; 
+    padding-bottom: 19px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgb(41, 105, 208);
+}   
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+    margin-right:20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h1 {
+    margin-left:15px;
+    color: rgb(47, 118, 233);
+}
+
+.left-top {
+    display: flex;
+    align-items: right;
+}
+
+.search {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 1rem;
+    width: 250px;
+}
+
+.search-button {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.right-top{
+    display: flex;
+    
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left:50px;
+}
+
+.profile-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 45px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f9;
+}
+.temp{
+    flex: 1;
+    margin: none;
+    flex-grow: 1;
+    display: grid;
+    gap: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-title {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.chart-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recent-exams {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.exam-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.exam-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.exam-detail {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.score-badge {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.performance-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}

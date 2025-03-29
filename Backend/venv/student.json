@@ -1,0 +1,89 @@
+[
+    {
+        "email": "john.doe@example.com",
+        "coursesEnrolled": 4,
+        "overallCompletion": 69,
+        "completed": 2,
+        "expired": 0,
+        "courses": [
+            {
+                "name": "BCSE202P - Data Structures",
+                "progress": 80.62
+            },
+            {
+                "name": "BCSE101E - Computer Programming: Python",
+                "progress": 91.02
+            },
+            {
+                "name": "BCSE103E - Java Programming",
+                "progress": 41.94
+            },
+            {
+                "name": "BCSE102P - Structured and Object-Oriented Programming",
+                "progress": 62.55
+            }
+        ]
+    },
+    {
+        "email": "vishnudhasaraju@gmail.com",
+        "coursesEnrolled": 2,
+        "overallCompletion": 60,
+        "completed": 1,
+        "expired": 0,
+        "courses": [
+            {
+                "name": "BCSE102P - Structured and Object-Oriented Programming",
+                "progress": 62.55
+            },
+            {
+                "name": "BCSE104E - Web Development",
+                "progress": 70.12
+            }
+        ]
+    },
+    {
+        "email": "gmai@hmail.com",
+        "coursesEnrolled": 1,
+        "overallCompletion": 45,
+        "completed": 0,
+        "expired": 0,
+        "courses": [
+            {
+                "name": "BCSE105P - Machine Learning Basics",
+                "progress": 45.0
+            }
+        ]
+    },
+    {
+        "email": "lohit@gmail.com",
+        "coursesEnrolled": 0,
+        "overallCompletion": 0,
+        "completed": 0,
+        "expired": 0,
+        "courses": []
+    },
+    {
+        "email": "fasdf.doe@example.com",
+        "coursesEnrolled": 0,
+        "overallCompletion": 0,
+        "completed": 0,
+        "expired": 0,
+        "courses": []
+    },
+    {
+        "email": "john.dfsdfoe@example.com",
+        "coursesEnrolled": 0,
+        "overallCompletion": 0,
+        "completed": 0,
+        "expired": 0,
+        "courses": []
+    },
+    {
+        "email": "exma@gmail.com",
+        "coursesEnrolled": 0,
+        "overallCompletion": 0,
+        "completed": 0,
+        "expired": 0,
+        "courses": []
+    }
+]

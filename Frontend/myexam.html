@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExamPro Dashboard</title>
+    <link rel="stylesheet" href="myexam.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>ExamPro</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="myexam.html">My Exams</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </div>
+        <div class="temp">
+        <div class="top">
+            <div class="left-top">
+                
+            </div>
+            <div class="right-top">
+                <input class="search" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search">
+                </button>
+                <button class="profile-button" onclick="toggleDropdown()">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="Profile">
+                </button>
+                <div class="dropdown-menu" id="dropdown">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="home.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <h1>Exams</h1>
+        <div class="content">
+            <div class="exam-block">
+                <div class="exam-head">Python Programming Fundamentals Exam</div>
+                <div class="exam-info">
+                    <p>This exam will text your understanding of Fundamentals of Python programming.</p>
+                    <p>5 questions</p>
+                    <p>90 mins</p>
+                    <p>Start: 1-02-2025 End: 10-02-2025</p>
+                </div>
+                <div class="exam-foot">
+                    <a class="retake" onclick="showInstructions()">Retake Test</a>
+                    <a class="take" onclick="showInstructions()">Take Test</a>
+                </div>
+            </div>
+            
+            <div class="exam-block">
+                <div class="exam-head">JavaScript Algorithms and Data Structures Exam</div>
+                <div class="exam-info">
+                    <p>This exam will test your understanding of algorithms and data structures using JavaScript. You'll implement sorting algorithms, work with arrays and objects, and solve algorithmic challenges.</p>
+                    <p>10 questions</p>
+                    <p>120 mins</p>
+                    <p>Start: 2-02-2025 End: 12-02-2025</p>
+                </div>
+                <div class="exam-foot">
+                    <a class="retake" onclick="showInstructions()">Retake Test</a>
+                    <a class="take" onclick="showInstructions()">Take Test</a>
+                </div>
+            </div>
+            
+            <div class="exam-block">
+                <div class="exam-head">C++ Object-Oriented Programming Final</div>
+                <div class="exam-info">
+                    <p>This exam covers key topics in C++ such as object-oriented programming principles, memory management, and inheritance. You will be asked to write code and debug errors.</p>
+                    <p>8 questions</p>
+                    <p>100 mins</p>
+                    <p>Start: 3-02-2025 End: 13-02-2025</p>
+                </div>
+                <div class="exam-foot">
+                    <a class="retake" onclick="showInstructions()">Retake Test</a>
+                    <a class="take" onclick="showInstructions()">Take Test</a>
+                </div>
+            </div>
+            
+            <div class="exam-block">
+                <div class="exam-head">SQL Query Writing Challenge</div>
+                <div class="exam-info">
+                    <p>This exam will test your ability to write SQL queries. You'll be tasked with retrieving, manipulating, and analyzing data from a sample database.</p>
+                    <p>6 questions</p>
+                    <p>75 mins</p>
+                    <p>Start: 4-02-2025 End: 14-02-2025</p>
+                </div>
+                <div class="exam-foot">
+                    <a class="retake" onclick="showInstructions()">Retake Test</a>
+                    <a class="take" onclick="showInstructions()">Take Test</a>
+                </div>
+            </div>
+            
+            <div class="exam-block">
+                <div class="exam-head">React.js Coding Assessment</div>
+                <div class="exam-info">
+                    <p>This assessment will test your React.js skills. You'll build components, manage state, and handle props in a small web app.</p>
+                    <p>7 questions</p>
+                    <p>90 mins</p>
+                    <p>Start: 5-02-2025 End: 15-02-2025</p>
+                </div>
+                <div class="exam-foot">
+                    <a class="retake" onclick="showInstructions()">Retake Test</a>
+                    <a class="take" onclick="showInstructions()">Take Test</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="exam-title">Terms and Instructions</h2>
+            <p id="exam-instructions"></p>
+            <div class="modal-buttons">
+                <button class="modal-close" onclick="closePopup()">Close</button>
+                <button class="modal-proceed" onclick="startExam()" href="Exam_page.html">Agree & Proceed</button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('active');
+        }
+        function startExam(examName) {
+    localStorage.setItem('selectedExam', examName); // Save exam name in local storage
+    window.location.href = 'Exam_page.html'; // Redirect to the exam page
+}
+
+
+// Modify the Take Test button to pass the exam name
+document.querySelectorAll('.take').forEach(button => {
+    button.addEventListener('click', function () {
+        const examName = this.closest('.exam-block').querySelector('.exam-head').innerText.trim();
+        showInstructions(examName);
+    });
+});
+
+function showInstructions(examName) {
+    const modal = document.getElementById('popup-modal');
+    const title = document.getElementById('exam-title');
+    const instructions = document.getElementById('exam-instructions');
+
+    title.innerText = `Terms and Instructions for ${examName}`;
+
+    const examInstructions = `
+        <ul>
+            <li>Attempt the test using a laptop or desktop for a better experience.</li>
+            <li>Recommended browsers: Chrome or Firefox.</li>
+            <li>Ensure a minimum internet speed of 2 Mbps.</li>
+            <li>No tab switches allowed; doing so may result in submission.</li>
+            <li>Disable notifications and pop-ups before starting the exam.</li>
+        </ul>
+    `;
+
+    instructions.innerHTML = examInstructions;
+
+    // Add examName to the Proceed button
+    const proceedBtn = document.querySelector('.modal-proceed');
+    proceedBtn.setAttribute('onclick', `startExam('${examName}')`);
+
+    modal.style.display = 'block';
+}
+
+
+        function closePopup() {
+            const modal = document.getElementById('popup-modal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById('popup-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+        window.addEventListener('click', function (event) {
+            const dropdown = document.getElementById('dropdown');
+            if (!event.target.closest('.profile-button')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

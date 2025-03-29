@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reset Password</title>
+        <link rel="stylesheet" href="forgot.css">
+    </head>
+    <body>
+        <script>
+            function isValidEmail(email) {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return emailPattern.test(email);
+            }
+
+            function verif() {
+                const mail = document.getElementById('remail');
+                if (isValidEmail(mail.value)){
+                    document.getElementById("mail-div").style.display = "none";
+                    document.getElementById("verif-div").style.display = "block";
+                }
+                else{
+                    document.getElementById("mailspan").innerHTML = "Enter a valid Email";
+                }
+            }
+            function otpver() {
+                document.getElementById("verif-div").style.display = "none";
+                document.getElementById("set-div").style.display = "block";
+            }
+        </script>
+        <div class="forgot-div">
+            <div id="mail-div">
+                <p class="head-p">Reset Password</p>
+                <input type="text" placeholder="Enter your email" id="remail">
+                <span id="mailspan"></span>
+                <button onclick="verif()">Reset password</button>
+                <a href="login.html">back to login</a>
+            </div>
+            <div id="verif-div">
+                <p class="head-p">Reset Password</p>
+                <p class="verif-msg">We sent an OTP to your email</p>
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <button onclick="otpver()">Continue</button>
+            </div>
+            <div id="set-div">
+                <p class="head-p">Set New Password</p>
+                <input type="password" id="difspan" placeholder="New Password">
+                <input type="password" placeholder="Confirm Password">
+                <a href="login.html"><button>Reset Password</button></a>
+            </div>
+        </div>
+    </body>
+</html>

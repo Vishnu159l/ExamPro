@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);;
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.progress-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    width: 74%;
+    background-color: #4caf50;
+}
+
+.progress-container p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.content {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content h1 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.content .score {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin: 5px 0;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.actions {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.actions a:hover {
+    background-color: #0056b3;
+}
+
+.illustration {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+

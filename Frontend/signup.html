@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="signup-div">
+            <div class="toggle-buttons">
+                <button id="userSignupBtn" class="active" onclick="toggleSignup('user')">User Sign Up</button>
+                <button id="facultySignupBtn" onclick="toggleSignup('faculty')">Faculty Sign Up</button>
+            </div>
+            <p id="signupTitle" class="head-p">Create a Student Account</p>
+
+            <div>
+                <input class="name" type="text" placeholder="First Name" id="firstName">
+                <input class="name" type="text" placeholder="Last Name" id="lastName">
+                <span id="fnError"></span><br>
+                <span id="lnError"></span>
+                <input class="mail" type="text" placeholder="Email" id="email">
+                <span id="emailError"></span>
+                <input class="pass" type="password" placeholder="Enter your Password" id="password">
+                <span id="passError"></span><br>
+                <input class="tnc" type="checkbox" id="tnc">
+                <label id="tncLabel">I agree to the <a href="#">Terms &amp; Conditions</a></label><br>
+                <span id="tncError"></span><br>
+                <button onclick="signup()">Sign Up</button>
+                <p class="desc-p">Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </div>
+
+        <script>
+            let signupType = 'user'; // Default signup type is 'user'
+
+            // Function to toggle between user and faculty signup
+            function toggleSignup(type) {
+                const userBtn = document.getElementById('userSignupBtn');
+                const facultyBtn = document.getElementById('facultySignupBtn');
+                const signupTitle = document.getElementById('signupTitle');
+                const firstName = document.getElementById('firstName');
+                const lastName = document.getElementById('lastName');
+                const email = document.getElementById('email');
+
+                signupType = type; // Update the signup type
+
+                if (type === 'user') {
+                    userBtn.classList.add('active');
+                    facultyBtn.classList.remove('active');
+                    signupTitle.textContent = 'Create a Student Account';
+                    firstName.placeholder = 'First Name';
+                    lastName.placeholder = 'Last Name';
+                    email.placeholder = 'Email';
+                } else {
+                    facultyBtn.classList.add('active');
+                    userBtn.classList.remove('active');
+                    signupTitle.textContent = 'Create a Faculty Account';
+                    firstName.placeholder = 'Faculty First Name';
+                    lastName.placeholder = 'Faculty Last Name';
+                    email.placeholder = 'Faculty Email';
+                }
+            }
+
+            // Function to validate and handle signup
+            async function signup() {
+                const firstName = document.getElementById('firstName').value.trim();
+                const lastName = document.getElementById('lastName').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value.trim();
+                const tnc = document.getElementById('tnc').checked;
+
+                // Error elements
+                const fnError = document.getElementById('fnError');
+                const lnError = document.getElementById('lnError');
+                const emailError = document.getElementById('emailError');
+                const passError = document.getElementById('passError');
+                const tncError = document.getElementById('tncError');
+
+                // Clear previous errors
+                fnError.innerHTML = '';
+                lnError.innerHTML = '';
+                emailError.innerHTML = '';
+                passError.innerHTML = '';
+                tncError.innerHTML = '';
+
+                let isValid = true;
+
+                // Validation checks
+                if (!firstName) {
+                    fnError.innerHTML = 'First name is required';
+                    isValid = false;
+                }
+                if (!lastName) {
+                    lnError.innerHTML = 'Last name is required';
+                    isValid = false;
+                }
+                if (!email) {
+                    emailError.innerHTML = 'Email is required';
+                    isValid = false;
+                } else if (!isValidEmail(email)) {
+                    emailError.innerHTML = 'Enter a valid email address';
+                    isValid = false;
+                }
+                if (!password) {
+                    passError.innerHTML = 'Password is required';
+                    isValid = false;
+                } else if (password.length < 6) {
+                    passError.innerHTML = 'Password must be at least 6 characters';
+                    isValid = false;
+                }
+                if (!tnc) {
+                    tncError.innerHTML = 'You must agree to the terms and conditions';
+                    isValid = false;
+                }
+
+                // If all fields are valid, proceed
+                if (isValid) {
+                    const userData = {
+                        firstName,
+                        lastName,
+                        email,
+                        password,
+                        signupType,
+                    };
+
+                    try {
+                        // Send POST request to Flask backend
+                        const response = await fetch('http://127.0.0.1:5000/signup', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(userData),
+                        });
+
+                        const result = await response.json();
+
+                        if (response.status === 201) {
+                            alert('Sign up successful! Redirecting to login...');
+                            window.location.href = 'login.html';
+                        } else {
+                            alert(result.error);
+                        }
+                    } catch (error) {
+                        console.error('Error during signup:', error);
+                        alert('Error signing up. Please try again later.');
+                    }
+                }
+            }
+
+            // Function to validate email format
+            function isValidEmail(email) {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return emailPattern.test(email);
+            }
+        </script>
+    </body>
+</html>

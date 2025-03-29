@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Result</title>
+    <link rel="stylesheet" href="Results_page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Coding Test: C++</h2>
+            <p>Polymorphism</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+            <p>60% Attempted (3/5)</p>
+        </div>
+
+        <div class="content">
+            <h1>Congratulations <div id="userName">Loading...</div></h1>
+            <div class="score">You have Scored 74%</div>
+            <p>You have passed the test!</p>
+        </div>
+
+        <div class="illustration">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/994/790/small_2x/exam-concept-education-studying-digital-elearnning-degree-graduate-concept-tiny-girl-student-with-test-exam-result-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg" alt="Celebration illustration">
+        </div>
+
+        <div class="actions">
+            <a href="myexam.html">Back to Courses</a>
+            <a href="#">Result Analysis</a>
+        </div>
+    </div>
+    <script>function loadUserName() {
+        const firstName = localStorage.getItem('firstName') || 'Guest';
+        const lastName = localStorage.getItem('lastName') || '';
+        document.querySelector('#userName').innerText = `Welcome, ${firstName} ${lastName}!`;
+    }
+    window.onload =loadUserName;
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ExamPro Dashboard</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>ExamPro</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="myexam.html">My Exams</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </div>
+
+        <div class="temp">
+            <div class="top">
+                <div class="left-top"></div>
+                <div class="right-top">
+                    <input class="search" type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search">
+                    </button>
+                    <button class="profile-button" onclick="toggleDropdown()">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="Profile">
+                    </button>
+                    <div class="dropdown-menu" id="dropdown">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Performance Overview</h1>
+
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-title">Average Score</div>
+                    <div class="stat-value" id="avgScore">--</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Exams Completed</div>
+                    <div class="stat-value" id="examsCompleted">--</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Total Study Time</div>
+                    <div class="stat-value" id="studyTime">--</div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="section-title">Score Progression</div>
+                    <canvas id="scoreChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <div class="section-title">Subject Distribution</div>
+                    <canvas id="subjectChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Recent Exam Performance -->
+            <div class="recent-exams">
+                <div class="section-title">Recent Exam Performance</div>
+                <div class="exam-grid" id="examGrid">
+                    <!-- Exam Cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Load performance.js -->
+    <script src="performance.js"></script>
+</body>
+
+</html>

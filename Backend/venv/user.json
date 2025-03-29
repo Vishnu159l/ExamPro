@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "Jhon",
+        "lastName": "Linkon",
+        "email": "john.doe@example.com",
+        "password": "Manidwerweraf",
+        "signupType": "user"
+    },
+    {
+        "firstName": "Vishnu",
+        "lastName": "Vardhan",
+        "email": "vishnudhasaraju@gmail.com",
+        "password": "Vishnu",
+        "signupType": "user"
+    },
+    {
+        "firstName": "varsha",
+        "lastName": "D",
+        "email": "gmai@hmail.com",
+        "password": "fsdklfwernm",
+        "signupType": "user"
+    },
+    {
+        "firstName": "lothit",
+        "lastName": "aswin",
+        "email": "lohit@gmail.com",
+        "password": "asdfghjk",
+        "signupType": "user"
+    },
+    {
+        "firstName": "fsfsd",
+        "lastName": "fsdfsd",
+        "email": "fasdf.doe@example.com",
+        "password": "Manidwerweraf",
+        "signupType": "user"
+    },
+    {
+        "firstName": "fsdfsdfffsd",
+        "lastName": "fdsff",
+        "email": "john.dfsdfoe@example.com",
+        "password": "Manidwerweraf",
+        "signupType": "faculty"
+    },
+    {
+        "firstName": "abc",
+        "lastName": "xyz",
+        "email": "exma@gmail.com",
+        "password": "fsdfrwre",
+        "signupType": "user"
+    }
+]

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+    <!-- Dashboard -->
+    <div id="dashboardPage" class="dashboard">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>ExamPro</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link active">Dashboard</a>
+                    <a href="createexam.html" class="nav-link">Create Exam</a>
+                    <a href="myexams.html" class="nav-link">My Exams</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="nav-btn notification-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                        </svg>
+                    </button>
+                    <a href="home.html"><button class="nav-btn logout-btn">Logout</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div>
+                    <h2>Welcome back, Professor</h2>
+                    <p>Here's what's happening with your exams</p>
+                </div>
+                <button class="create-exam-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 4v16m8-8H4"/>
+                    </svg>
+                    Create New Exam
+                </button>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p>Active Exams</p>
+                        <h3>12</h3>
+                        <span class="trend trend-up">↑ +2 this week</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p>Total Students</p>
+                        <h3>487</h3>
+                        <span class="trend trend-up">↑ +28 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p>Average Score</p>
+                        <h3>76%</h3>
+                        <span class="trend trend-down">↓ -2% this week</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-grid">
+                    <div class="section-card">
+                        <div class="card-header">
+                            <h3>Recent Exams</h3>
+                            <a href="#" class="view-all-btn">View all</a>
+                        </div>
+                        <div class="exam-list">
+                            <div class="exam-item border-green">
+                                <h4>Final Exam - Computer Science 101</h4>
+                                <p>Scheduled for Feb 10, 2025</p>
+                            </div>
+                            <div class="exam-item border-blue">
+                                <h4>Midterm - Data Structures</h4>
+                                <p>Active - Ends Feb 7, 2025</p>
+                            </div>
+                            <div class="exam-item border-gray">
+                                <h4>Quiz 3 - Algorithms</h4>
+                                <p>Completed - Feb 3, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                            <a href="#" class="view-all-btn">View all</a>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon bg-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 4v16m8-8H4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>New exam created</h4>
+                                    <p>2 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon bg-green">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Quiz submissions graded</h4>
+                                    <p>5 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon bg-yellow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Exam time extended</h4>
+                                    <p>Yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Notification Modal -->
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <h3>Notifications</h3>
+            <div class="notification-list">
+                <div class="notification-item">
+                    <div class="notification-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>New exam submission</h4>
+                        <p>2 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="modal">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background: URL('./BACK.png') no-repeat center center fixed   ;
+    background-size: cover; 
+}
+
+.login-div {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-div p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.username,.password {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    margin-top: 12px;
+}
+
+label {
+    color: #666;
+    font-size: 14px;
+}
+
+.forl {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 14px;
+    float: right;
+    margin-top:5px;
+}
+
+.back-p {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fors {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: center;
+    display: block;
+}
+
+.forl:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.toggle-buttons button {
+    width: 48%;
+    background-color: #ddd;
+    color: #333;
+}
+
+.toggle-buttons button.active {
+    background-color: #4a90e2;
+    color: white;
+}
+span{
+    color: red;
+    font-size: 11px;
+    margin-bottom: 10px;;
+}

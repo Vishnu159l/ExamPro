@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "name": "Jhon Linkon",
+      "email": "john.doe@example.com",
+      "stats": {
+        "average_score": 85,
+        "exams_completed": 12,
+        "total_study_time": "18 hours"
+      },
+      "score_progress": [
+        { "month": "Jan", "score": 78 },
+        { "month": "Feb", "score": 82 },
+        { "month": "Mar", "score": 66 },
+        { "month": "Apr", "score": 90 }
+      ],
+      "subject_distribution": [
+        { "subject": "BCSE202P - Data Structures", "percentage": 35 },
+        { "subject": "BCSE101E - Computer Programming: Python", "percentage": 30 },
+        { "subject": "BCSE103E - Java Programming", "percentage": 20 },
+        { "subject": "BCSE102P - Structured and Object-Oriented Programming", "percentage": 15 }
+      ],
+      "recent_exams": [
+        {
+          "exam": "Data Structures Final",
+          "date": "2025-03-20",
+          "questions": 50,
+          "time": "60 mins",
+          "score": 85
+        },
+        {
+          "exam": "Python Programming Quiz",
+          "date": "2025-03-18",
+          "questions": 40,
+          "time": "45 mins",
+          "score": 88
+        }
+      ]
+    },
+    {
+      "user_id": 2,
+      "name": "Vishnu Vardhan",
+      "email": "vishnudhasaraju@gmail.com",
+      "stats": {
+        "average_score": 92,
+        "exams_completed": 15,
+        "total_study_time": "22 hours"
+      },
+      "score_progress": [
+        { "month": "Jan", "score": 88 },
+        { "month": "Feb", "score": 78 },
+        { "month": "Mar", "score": 92 },
+        { "month": "Apr", "score": 85 }
+      ],
+      "subject_distribution": [
+        { "subject": "BCSE102P - Structured and Object-Oriented Programming", "percentage": 45 },
+        { "subject": "BCSE104E - Web Development", "percentage": 55 }
+      ],
+      "recent_exams": [
+        {
+          "exam": "Object-Oriented Programming Test",
+          "date": "2025-03-22",
+          "questions": 40,
+          "time": "55 mins",
+          "score": 92
+        },
+        {
+          "exam": "Web Development Project",
+          "date": "2025-03-19",
+          "questions": 35,
+          "time": "50 mins",
+          "score": 90
+        }
+      ]
+    },
+    {
+      "user_id": 3,
+      "name": "Varsha D",
+      "email": "gmai@hmail.com",
+      "stats": {
+        "average_score": 78,
+        "exams_completed": 8,
+        "total_study_time": "12 hours"
+      },
+      "score_progress": [
+        { "month": "Jan", "score": 70 },
+        { "month": "Feb", "score": 75 },
+        { "month": "Mar", "score": 78 },
+        { "month": "Apr", "score": 80 }
+      ],
+      "subject_distribution": [
+        { "subject": "BCSE105P - Machine Learning Basics", "percentage": 100 }
+      ],
+      "recent_exams": [
+        {
+          "exam": "Machine Learning Basics Test",
+          "date": "2025-03-25",
+          "questions": 45,
+          "time": "50 mins",
+          "score": 78
+        }
+      ]
+    }
+  ]
+}

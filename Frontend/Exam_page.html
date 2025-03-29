@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Test: C++</title>
+    <link rel="stylesheet" href="Exam_page.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Panel with Questions & Code Editor -->
+        <div class="left-panel">
+            <div class="header">
+                <h1>Coding Test: C++</h1>
+                <div id="userName">Loading...</div> <!-- Name loaded dynamically -->
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <div class="main-content">
+                <!-- Dynamic Question Content -->
+                <div class="question-content" id="questionContent">
+                    <!-- Question will be loaded dynamically -->
+                </div>
+
+                <!-- Code Editor Section -->
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <button>Input</button>
+                        <button>Output</button>
+                        <button>Log</button>
+                    </div>
+                    <textarea id="codeEditor" placeholder="Write your code here...">// Sample code to perform I/O:
+#include &lt;stdio.h&gt;
+
+int main() 
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("Input numbers are: %d and %d\n", a, b);
+    return 0;
+}</textarea>
+                    <div class="editor-actions">
+                        <button class="run-button" onclick="runCode()">Run</button>
+                        <button class="save-button" onclick="saveAndNext()">Save & Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel with Timer and Controls -->
+        <div class="right-panel">
+            <div class="timer" id="timer">01:12:47</div>
+            <div class="side-buttons">
+                <button onclick="bookmarkQuestion()">Bookmark</button>
+                <a href="Results_page.html"><button>Submit</button></a>
+
+                <!-- Question Number Boxes -->
+                <div class="submit-section">
+                    <div class="line"></div>
+                    <div class="number-box-container" id="numberBoxContainer">
+                        <!-- Question Numbers will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="tabSwitchSound" src="./audio.mp3" preload="auto"></audio>
+    <!-- Load External JS File -->
+    <script src="exam_page.js"></script>
+</body>
+
+</html>

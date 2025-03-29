@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-div">
+        <div class="toggle-buttons">
+            <button id="userLoginBtn" class="active" onclick="toggleLogin('user')">User Login</button>
+            <button id="facultyLoginBtn" onclick="toggleLogin('faculty')">Faculty Login</button>
+        </div>
+        <p id="loginTitle">Student Log In</p>
+        <div>
+            <input class="username" type="text" placeholder="Username or Email" id="usernameInput">
+            <span id="p"></span>
+            <input class="password" type="password" placeholder="Password" id="passwordInput">
+            <span id="ps"></span><br>
+            <input type="checkbox">
+            <label>Remember Me</label>
+            <a class="forl" href="forgot.html">Forgot Password?</a>
+        </div>
+        <div>
+            <button onclick="login()">Log In</button>
+            <a class="fors" href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <script>
+        let loginType = 'user'; // Default login type is 'user'
+
+        // Function to toggle between user and faculty login
+        function toggleLogin(type) {
+            const userBtn = document.getElementById('userLoginBtn');
+            const facultyBtn = document.getElementById('facultyLoginBtn');
+            const loginTitle = document.getElementById('loginTitle');
+            const usernameInput = document.getElementById('usernameInput');
+
+            loginType = type; // Update the loginType based on selection
+
+            if (type === 'user') {
+                userBtn.classList.add('active');
+                facultyBtn.classList.remove('active');
+                loginTitle.textContent = 'Student Log In';
+                usernameInput.placeholder = 'Username or Email';
+            } else {
+                facultyBtn.classList.add('active');
+                userBtn.classList.remove('active');
+                loginTitle.textContent = 'Faculty Log In';
+                usernameInput.placeholder = 'Faculty ID or Email';
+            }
+        }
+
+        // Function to handle the login process
+        async function login() {
+            const username = document.getElementById('usernameInput').value;
+            const password = document.getElementById('passwordInput').value;
+
+            if (!username || !password) {
+                document.getElementById('ps').innerHTML = "Invalid Credentials.";
+                return;
+            }
+
+            const response = await fetch('http://127.0.0.1:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: username,
+                    password: password,
+                    loginType: loginType
+                }),
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+
+                // Store user data in localStorage
+                localStorage.setItem('firstName', result.firstName);
+                localStorage.setItem('lastName', result.lastName);
+                localStorage.setItem('email', result.email);
+                // Redirect based on login type
+                if (loginType === 'user') {
+                    window.location.href = 'dashboard.html';
+                } else {
+                    window.location.href = 'index.html';
+                }
+            } else {
+                const errorResult = await response.json();
+                if (errorResult.error === 'User not found') {
+                    alert('User not found! Please create an account.');
+                    window.location.href = 'signup.html';
+                } else {
+                    document.getElementById('ps').innerHTML = "Invalid Credentials.";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 class="dashh2">ExamPro</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="myexam.html">My Exams</a></li>
+                <li><a href="performance.html">Performance</a></li>
+            </ul>
+        </div>
+        <div class="temp">
+            <div class="content">
+                <div class="top">
+                    <div class="left-top"></div>
+                    <div class="right-top">
+                        <input class="search" type="text" placeholder="Search">
+                        <button class="search-button">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search">
+                        </button>
+                        <button class="profile-button" onclick="toggleDropdown()">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="Profile">
+                        </button>
+                        <div class="dropdown-menu" id="dropdown">
+                            <a href="#">Profile</a>
+                            <a href="#">Settings</a>
+                            <a href="home.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                    Hello <span id="student-name">STUDENT</span> <br>
+                    <p>Welcome to our online learning platform!<br>
+                        Good luck with your learning.</p>
+                </div>
+                <h1 class="over">Overview</h1>
+                <div class="metrics">
+                    <div class="metric">
+                        <h3>Courses Enrolled</h3>
+                        <span>0</span>
+                    </div>
+                    <div class="metric">
+                        <h3>Overall Completion</h3>
+                        <span>0%</span>
+                    </div>
+                    <div class="metric">
+                        <h3>Completed</h3>
+                        <span>0</span>
+                    </div>
+                    <div class="metric">
+                        <h3>Expired</h3>
+                        <span>0</span>
+                    </div>
+                </div>
+
+                <h1 class="over">Courses</h1>
+                <div class="courses">
+                    <div class="course-list" id="course-list">
+                        <!-- Course list will be dynamically populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const firstName = localStorage.getItem('firstName');
+            const lastName = localStorage.getItem('lastName');
+            const email = localStorage.getItem('email');
+
+            if (!firstName || !lastName || !email) {
+                alert('Please log in again.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            document.getElementById('student-name').textContent = firstName + ' ' + lastName;
+
+            // Fetch student data from Flask backend
+            fetch('http://127.0.0.1:5000/get-student-data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+
+                // Update metrics dynamically
+                document.querySelector('.metrics .metric:nth-child(1) span').textContent = data.coursesEnrolled;
+                document.querySelector('.metrics .metric:nth-child(2) span').textContent = data.overallCompletion + '%';
+                document.querySelector('.metrics .metric:nth-child(3) span').textContent = data.completed;
+                document.querySelector('.metrics .metric:nth-child(4) span').textContent = data.expired;
+
+                // Dynamically populate courses
+                const courseList = document.getElementById('course-list');
+                courseList.innerHTML = ''; // Clear existing courses
+
+                data.courses.forEach(course => {
+                    const courseDiv = document.createElement('div');
+                    courseDiv.className = 'course';
+                    courseDiv.innerHTML = `
+                        <div>${course.name}</div>
+                        <div class="progress-bar">
+                            <span style="width: ${course.progress}%;"></span>
+                        </div>
+                    `;
+                    courseList.appendChild(courseDiv);
+                });
+
+                // Update progress bar colors dynamically
+                updateProgressBarColors();
+            })
+            .catch(error => console.error('Error fetching student data:', error));
+
+            function updateProgressBarColors() {
+                const progressBars = document.querySelectorAll('.progress-bar span');
+
+                progressBars.forEach(bar => {
+                    const width = parseFloat(bar.style.width);
+
+                    if (width >= 80) {
+                        bar.style.backgroundColor = '#4CAF50'; // Green for 80%+
+                    } else if (width >= 50) {
+                        bar.style.backgroundColor = '#FFC107'; // Yellow for 50%+
+                    } else {
+                        bar.style.backgroundColor = '#F44336'; // Red for <50%
+                    }
+                });
+            }
+        });
+
+        // Close dropdown on clicking outside
+        window.addEventListener('click', function (event) {
+            const dropdown = document.getElementById('dropdown');
+            if (!event.target.closest('.profile-button')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    // Logout and clear local storage
+    function logout() {
+        localStorage.removeItem('loggedInUser');
+        window.location.href = 'home.html'; // Redirect to home after logout
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background: URL('./BACK.png') no-repeat center center fixed   ;
+    background-size: cover;
+}
+
+.signup-div {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.name {
+    width: 49%;
+    padding: 12px;
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.name:hover {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.mail, .pass {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.mail:focus, .pass:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.mail:hover, .pass:hover {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.tnc {
+    margin-right: 6px;
+    margin-top: 12px;
+}
+
+.desc-p {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+label {
+    color: #666;
+    font-size: 14px;
+}
+
+.head-p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.toggle-buttons button {
+    width: 48%;
+    background-color: #ddd;
+    color: #333;
+}
+
+.toggle-buttons button.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+span{
+    color: red;
+    font-size: 11px;
+    margin-bottom: 10px;;
+}

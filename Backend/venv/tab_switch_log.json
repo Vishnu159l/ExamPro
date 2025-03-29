@@ -1,0 +1,686 @@
+[
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:00.385Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:04.873Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:20:05.026Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:16.847Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:20:17.021Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:20.176Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:23.711Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:36.364Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:20:42.570Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:21:30.178Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:21:30.332Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:21:31.480Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "vishnudhasaraju@gmail.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:22:32.922Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "vishnudhasaraju@gmail.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:22:33.073Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:35:32.514Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:35:32.661Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:35:35.135Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:35:35.289Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:35:37.354Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:35:37.496Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:35:41.771Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:35:41.909Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:38:00.661Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:38:23.450Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:38:23.603Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:38:27.741Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:38:28.511Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T08:38:28.562Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:38:31.666Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:38:31.813Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:38:35.453Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:38:35.617Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:39:15.224Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:39:16.908Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T08:39:17.752Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 4,
+        "timestamp": "2025-03-28T08:39:18.519Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:39:22.900Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:39:23.047Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:39:24.786Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:39:24.934Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:39:36.171Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:39:36.210Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:39:38.524Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:41:32.017Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:41:48.034Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:41:48.194Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:41:54.980Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:41:57.844Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:42:04.778Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:42:04.949Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T08:45:13.207Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 4,
+        "timestamp": "2025-03-28T08:45:16.936Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:45:21.135Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T08:45:21.292Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T08:45:27.748Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:10:07.214Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:10:07.386Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:10:12.490Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:10:18.263Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:10:18.418Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:10:35.932Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:10:37.159Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T09:10:37.201Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:10:59.358Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:10:59.519Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:01.163Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:02.529Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:11:02.667Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:04.247Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:12.976Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:14.933Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:11:24.128Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:13:32.623Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:13:34.282Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T09:13:34.987Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:05.562Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:14.548Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:14.603Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:16.661Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:19.024Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:19.174Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:29.642Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:33.156Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 3,
+        "timestamp": "2025-03-28T09:14:33.191Z",
+        "action": "Exam auto-submitted"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:39.092Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:39.230Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:43.145Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:43.298Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:14:46.736Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:14:46.882Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:15:49.831Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:15:49.990Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:16:30.356Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:16:30.401Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:16:31.896Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:16:32.043Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:08.317Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:17:08.389Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:10.197Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:12.633Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:24.898Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-28T09:17:25.050Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:39.075Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:45.725Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:17:46.527Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:23:20.470Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-28T09:23:35.917Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-29T00:49:25.508Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-29T00:49:25.673Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-29T00:49:42.493Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-29T00:49:42.630Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-29T00:50:12.970Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 2,
+        "timestamp": "2025-03-29T00:50:13.101Z",
+        "action": "Tab switch detected"
+    },
+    {
+        "email": "john.doe@example.com",
+        "tabSwitchCount": 1,
+        "timestamp": "2025-03-29T00:50:28.077Z",
+        "action": "Tab switch detected"
+    }
+]
